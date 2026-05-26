@@ -1,10 +1,56 @@
 # YOLO Image Search System
 
 ## ABSTRACT 
-The YOLO Image Search System is a computer vision application developed using YOLOv11 for object detection and image retrieval. The system detects objects present in images, generates metadata from detection outputs, and allows users to search images using object-based filters. An interactive Streamlit interface is used to process images, visualize results, and perform intelligent image searches.
+The YOLO Image Search System is an AI-powered computer vision application designed to perform object detection, metadata generation, and image retrieval using YOLOv11. The system processes image datasets, detects objects present in images, stores detection information as structured metadata, and enables users to perform intelligent searches using object-based filters.
+The application provides an interactive Streamlit UI, allowing users to:
 
+Process new image datasets
+
+Run object detection using YOLOv11
+
+Generate searchable metadata
+
+Apply logical filters (AND / OR)
+
+Retrieve matching images instantly
+
+Export results as JSON
+
+The project aims to improve image organization and searchability using modern object detection techniques.
 ## Dataset & YOLO Model Details (COCO)
-This project uses the COCO dataset classes, which contain 80 common object categories such as person, car, dog, cat, airplane, and banana. The detection model used is YOLOv11, chosen for its fast inference speed, improved accuracy, and real-time object detection capability. The model predicts object classes, bounding boxes, and confidence scores which are later converted into searchable metadata.
+This project uses the COCO (Common Objects in Context) dataset classes supported by YOLOv11.
+
+COCO contains 80 object categories, including:
+```
+Person
+Car
+Dog
+Cat
+Airplane
+Banana
+Bicycle
+Chair
+Bottle
+Laptop
+YOLO Model Used
+```
+### Model: YOLOv11
+
+### YOLOv11 is a state-of-the-art object detection model optimized for:
+```
+High detection accuracy
+Real-time inference
+Faster processing
+Improved scalability
+```
+### The model performs:
+```
+Object Detection
+Bounding Box Prediction
+Class Identification
+Confidence Score Generation
+Detection outputs are converted into metadata for image querying.
+```
 
 ## Environment Setup
 Before running the project, install:
@@ -96,5 +142,27 @@ Export JSON output
 ## Enhancements
 The system goes beyond basic object detection by introducing metadata-based image searching. Detection outputs are stored in JSON format, allowing fast querying without rerunning inference. The application also supports logical filtering using AND/OR conditions, threshold-based searches, and loading previously generated metadata for quicker execution. The modular pipeline improves scalability and maintainability.
 
-## Result & Conclusion
-The YOLO Image Search System successfully performs object detection, metadata generation, and image retrieval using YOLOv11. The Streamlit interface provides a simple and interactive user experience, while reusable metadata reduces repeated computation. Overall, the project demonstrates an effective combination of computer vision, metadata engineering, and UI deployment for building an intelligent image search system.
+## Conclusion
+The project demonstrates how YOLOv11 object detection, metadata engineering, and interactive deployment can be combined to build an efficient image search application.
+
+The modular pipeline architecture improves:
+
+Scalability
+
+Maintainability
+
+Usability
+
+Performance
+
+### Future improvements may include:
+
+Semantic search
+
+Multi-model support
+
+Cloud deployment
+
+Database integration
+
+Real-time video search
